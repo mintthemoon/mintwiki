@@ -178,7 +178,8 @@ echo <keyring_password> | price-feeder ~/config.toml
 ## Create a service
 A systemd service will keep `price-feeder` running in the background and restart it if it stops.
 
-1. Create the service file with `sudo` using your favorite text editor.
+1. Create the service file with `sudo` using your favorite text editor. 
+Replace `<keyring_password>` with the one you created.
 ```ini title="/etc/systemd/system/kujira-price-feeder.service"
 [Unit]
 Description=kujira-price-feeder
