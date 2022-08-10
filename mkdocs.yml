@@ -1,28 +1,30 @@
 site_name: docs.mintthemoon.xyz
 nav:
-- Kujira Resources: kujira-resources.md
-- Kujira Node Guide: kujira-node-guide.md
-- Kujira Statesync: kujira-statesync.md
+- Kujira:
+  - Resources: kujira/resources.md
+  - Node Guide: kujira/node-guide.md
+  - Validator Guide: kujira/validator-guide.md
+  - Statesync: kujira/statesync.md
 theme:
   name: material
+  font:
+    text: Noto Sans
+    code: Noto Sans Mono
+  icon:
+    logo: material/book
   palette:
-  - scheme: default
-    toggle:
-      icon: material/brightness-7 
-      name: Switch to dark mode
-    primary: light green
-    accent: deep orange
   - scheme: slate
     toggle:
       icon: material/brightness-4
       name: Switch to light mode
     primary: light green
     accent: deep orange
-  font:
-    text: Noto Sans
-    code: Noto Sans Mono
-  icon:
-    logo: material/book
+  - scheme: default
+    toggle:
+      icon: material/brightness-7 
+      name: Switch to dark mode
+    primary: light green
+    accent: deep orange
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

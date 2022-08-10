@@ -3,8 +3,8 @@
 ## Details
 | Name | Value |
 | --- | --- |
-| Mainnet | kaiyo-1 |
-| Testnet | harpoon-4 |
+| chain-id | kaiyo-1 |
+| kujirad version | v0.4.1 |
 
 
 ## Infrastructure
@@ -48,5 +48,11 @@
 ### Other
 - [Smart Stake Analytics](https://kujira.smartstake.io)
 - [Cros-nest Chain Monitor](https://chain-monitor.cros-nest.com/d/Cros-nest/block-chains?orgId=1&var-chain_id=kaiyo-1)
-- [Polkachu's Community Tools](https://polkachu.com/networks/kujira)
+- [Polkachu Community Tools](https://polkachu.com/networks/kujira)
 - [Kohola.io Peer Map](https://map.kohola.io)
+
+## Testnets
+### harpoon-4
+- RPC: [https://test-rpc-kujira.mintthemoon.xyz:443](https://test-rpc-kujira.mintthemoon.xyz)
+- LCD: [https://test-lcd-kujira.mintthemoon.xyz:443](https://test-lcd-kujira.mintthemoon.xyz)
+- Explorer/Wallet: [testnets-cosmos.mintthemoon.xyz](https://testnets-cosmos.mintthemoon.xyz/kujira)

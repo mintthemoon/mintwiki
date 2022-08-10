@@ -1,14 +1,11 @@
 # mintwiki
 
-Welcome to my docs <3
+Welcome to the mintwiki! Powered by [mintthemoon.xyz](https://www.mintthemoon.xyz/) <3
+
+More coming soon!
 
 ## Featured
 
-* [Statesync](/statesync)
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [Kujira Resources](/kujira/resources)
+* [Kujira Statesync](/kujira/statesync)
+* [Kujira Node Guide](/kujira/node-guide)

@@ -23,11 +23,14 @@ sudo apt install -y build-essential git unzip curl
 ### Install go toolchain
 1. Download and extract go 1.18.5.
 ```bash
-curl -fsSL https://golang.org/dl/go1.18.5.linux-amd64.tar.gz | sudo tar -xzC /usr/local/go
+curl -fsSL https://golang.org/dl/go1.18.5.linux-amd64.tar.gz | sudo tar -xzC /usr/local
 ```
-2. Configure environment variables for `kuji`.
+2. Login as `kuji`.
 ```bash
 sudo su -l kuji
+```
+3. Configure environment variables for `kuji`.
+```bash
 cat <<EOF >> ~/.bashrc
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
@@ -35,28 +38,30 @@ export GO111MODULE=on
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 EOF
 source ~/.bashrc
-go version  # should output 1.18.5
-exit
+go version  # should output "go version go1.18.5 linux/amd64"
 ```
 
 
 ## Build node binary
-Build and install the binary as the user that will run it.
+1. Login as `kuji` (skip if you're already logged in).
 ```bash
 sudo su -l kuji
+```
+2. Build and install the binary as the user that will run it.
+```bash
 git clone https://github.com/Team-Kujira/core kujira-core
 cd kujira-core
 git checkout v0.4.1
 make install
-kujirad version  # should output 0.4.1
-exit
+cd ..
+kujirad version  # should output "0.4.1"
 ```
 
 
-## Configure the chain
-This section is written for mainnet (kaiyo-1), modify the ID and genesis URL as needed.
+## Configure chain
+This section is written for mainnet (kaiyo-1); modify the ID, genesis, and seeds as needed.
 
-1. Login as `kuji`.
+1. Login as `kuji` (skip if you're already logged in).
 ```bash
 sudo su -l kuji
 ```
@@ -85,7 +90,7 @@ sed -i 's/^seeds =.*/seeds = "70c1d37dd9337d7162d67f49340805360e33b2c5@seed.kuji
 ## Start the node
 Congrats! You're ready to go.
 
-1. (Optional) [Statesync](/kujira-statesync) if you want a head start over syncing from scratch.
+1. (Optional) [Statesync](/kujira/statesync) if you want a head start over syncing from scratch.
 2. Start syncing blocks!
 ```bash
 kujirad start
