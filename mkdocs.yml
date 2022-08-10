@@ -2,9 +2,10 @@ site_name: docs.mintthemoon.xyz
 nav:
 - Kujira:
   - Resources: kujira/resources.md
+  - Statesync: kujira/statesync.md
   - Node Guide: kujira/node-guide.md
   - Validator Guide: kujira/validator-guide.md
-  - Statesync: kujira/statesync.md
+  - Oracle Guide: kujira/oracle-guide.md
 theme:
   name: material
   font:
