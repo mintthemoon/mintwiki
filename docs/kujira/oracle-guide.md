@@ -101,6 +101,18 @@ mkdir ~/.kujira/keyring-file
 mv ~/.kujira/*.info ~/.kujira/*.address ~/.kujira/keyring-file
 ```
 
+### Set the feeder delegation
+This step will authorize your new wallet to send oracle votes on behalf of your validator.
+The transaction should be sent from the validator wallet so run on a node where it's available.
+
+- Replace `<oracle_wallet>` with your new wallet address.
+- Replace `<validator_wallet>` with you validator wallet name.
+
+```bash
+kujirad tx oracle set-feeder <oracle_wallet> --from <validator_wallet> --fees 250ukuji
+```
+
+
 ### Create the config
 1. Login as `kujioracle` (skip if you're already logged in).
 ```bash
@@ -164,6 +176,11 @@ sudo su -l kujioracle
     rest = "https://api1.binance.com"
     websocket = "stream.binance.com:9443"
     ```
+
+#### Validate the currency pairs
+It's important to only submit price votes for whitelisted denoms in order to avoid slashing.
+Check this link to see the currently configured denoms and update `[[currency_pairs]]` if needed:
+[harpoon-4 oracle parameters](https://lcd.harpoon.kujira.setten.io/oracle/params).
 
 ## Run `price-feeder`
 1. Login as `kujioracle` (skip if you're already logged in).
