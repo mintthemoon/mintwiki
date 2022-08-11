@@ -1,4 +1,4 @@
-site_name: docs.mintthemoon.xyz
+site_name: mintwiki
 nav:
 - Kujira:
   - Resources: kujira/resources.md
