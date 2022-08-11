@@ -8,7 +8,7 @@ The node should not be running for this process (stop the service if you have on
 
 1. Install dependencies if you don't have them already.
 ```bash
-sudo apt install curl jq
+sudo apt install -y curl jq
 ```
 2. Login as `kuji`. Change the user if it's different or skip if you're already logged in.
 ```bash
