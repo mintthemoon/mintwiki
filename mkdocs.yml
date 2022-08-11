@@ -6,6 +6,11 @@ nav:
   - Node Guide: kujira/node-guide.md
   - Validator Guide: kujira/validator-guide.md
   - Oracle Guide: kujira/oracle-guide.md
+- Bitcanna:
+  - Resources: bitcanna/resources.md
+  - Statesync: bitcanna/statesync.md
+  - Node Guide: bitcanna/node-guide.md
+  - Validator Guide: bitcanna/validator-guide.md
 theme:
   name: material
   font:
