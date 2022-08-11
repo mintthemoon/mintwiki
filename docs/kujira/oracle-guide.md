@@ -77,7 +77,6 @@ kujirad version  # should output "0.5.0"
 ```bash
 git clone https://github.com/Team-Kujira/oracle-price-feeder
 cd oracle-price-feeder
-sed -i 's/CGO_ENABLED=0//' ./Makefile
 make install
 price-feeder version
 ```
