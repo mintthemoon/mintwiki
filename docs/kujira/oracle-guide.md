@@ -126,6 +126,7 @@ sudo su -l kujioracle
     gas_prices = "0.00125ukuji"
     enable_server = true
     enable_voter = true
+    provider_timeout = "500ms"
 
     [server]
     listen_addr = "0.0.0.0:7171"
