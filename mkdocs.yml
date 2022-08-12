@@ -11,6 +11,8 @@ nav:
   - Statesync: bitcanna/statesync.md
   - Node Guide: bitcanna/node-guide.md
   - Validator Guide: bitcanna/validator-guide.md
+- Security:
+  - Horcrux Guide: security/horcrux-guide.md
 theme:
   name: material
   font:
@@ -36,4 +38,7 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
