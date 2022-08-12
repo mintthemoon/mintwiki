@@ -38,6 +38,7 @@
 - [finder.kujira.app](https://finder.kujira.app)
 - [cosmosrun.info](https://cosmosrun.info/kujira)
 - [kujira.explorers.guru](https://kujira.explorers.guru)
+- [exp.nodeist.net](https://exp.nodeist.net)
 
 ### Wallets
 - [cosmos.mintthemoon.xyz](https://cosmos.mintthemoon.xyz/kujira)
