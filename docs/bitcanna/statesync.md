@@ -18,7 +18,7 @@ sudo su -l bcna
 ```bash
 bcnad --home $HOME/.bcna tendermint unsafe-reset-all
 ```
-4. Modify `config.toml` with the current statesync settings.
+4. Run these commands to modify `config.toml` with the current statesync settings.
 ```bash
 RPC=https://rpc-bitcanna.mintthemoon.xyz:443
 LATEST_HEIGHT=$(curl -s $RPC/block | jq -r .result.block.header.height)
