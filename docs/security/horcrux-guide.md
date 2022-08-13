@@ -9,7 +9,7 @@ a specified threshold has been reached.
     This is experimental software and messing with signing is risky! This guide is written
     to be as safe as possible but no guarantees can be made and only you are responsible
     for the results of following it. For advanced users; please only attempt this if
-    you've done the research to understand it.
+    you've done the research to understand it. Try it on a testnet first.
 
 ### Advantages
 #### Security
@@ -32,8 +32,12 @@ recommended for the high availability benefits, and the more the merrier!
 ## Requirements
 ### Servers
 - 3 servers with minimum requirements for signers: 1 CPU/1GB RAM/10GB SSD
-- 1+ servers with minimum requirements for your chain's node software. More is better!
+- 1+ servers with minimum requirements for validating your chain. More is better!
 - This guide is written for Ubuntu 22.04.
+
+### Software
+This guide is written for horcrux v2.0.0 and should work for any chain that version supports.
+Do your research to make sure horcrux is compatible with your chain.
 
 ### Networking
 #### Signer peer-to-peer
@@ -82,7 +86,7 @@ This command will be slightly different for each signer. Individual configs are 
 - Replace `<chain_id>` with the ID for your chain.
 - Replace `<sentry_X_ip>` with the IP of your sentry. All sentries should be in the list.
 - Replace `<signer_X_ip>` with the IP of your signer.
-- The recommended timeout is `1500ms`, this may be too long for some chains.
+- The timeout is `1500ms`, this may not be the optimal setting for all chains.
 
 #### Signer 1
 ```bash
@@ -208,9 +212,9 @@ EOF
 
 
 ### Start horcrux service
-Everything is ready on the signers, start the service and watch the logs on each one.
+The signers are ready, enable and start the service then watch the logs on each one.
 ```bash
-sudo systemctl start horcrux
+sudo systemctl enable --now horcrux
 sudo journalctl -fu horcrux
 ```
 The service will have continuous errors trying to dial the sentry ports which we haven't
@@ -228,12 +232,11 @@ sed -i \
     <chain_home>/config/config.toml
 ```
 2. Restart the service and watch the logs. Replace `<node>` with your node service name (e.g. `kujirad`).
+If successful, the top of the logs should contain the output `this node is a validator`.
 ```bash
 sudo systemctl restart <node>
 sudo journalctl -fu <node>
 ```
-
-If successful, the top of the logs should contain the output `this node is a validator`.
 
 ## THE END
 You made it, congrats! It's not easy to get this far. If things didn't go as planned,
