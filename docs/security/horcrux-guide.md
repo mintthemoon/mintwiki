@@ -36,8 +36,14 @@ recommended for the high availability benefits, and the more the merrier!
 - This guide is written for Ubuntu 22.04.
 
 ### Software
+#### Versions
 This guide is written for horcrux v2.0.0 and should work for any chain that version supports.
 Do your research to make sure horcrux is compatible with your chain.
+
+#### RTFM
+Read the docs! There's important information on the [official GitHub](https://github.com/strangelove-ventures/horcrux/blob/main/README.md)
+and this guide is not meant to be a replacement for it. Understand what you're doing here so you
+can react if anything doesn't work out as expected.
 
 ### Networking
 #### Signer peer-to-peer
