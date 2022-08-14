@@ -1,8 +1,6 @@
 # Kujira Oracle Guide
 
 ## Introduction
-TESTNET ONLY: the oracle is not required yet for mainnet. This page will be updated to configure kaiyo-1 when it is.
-
 Validators are required to submit price feeds for the on-chain oracle.
 The `price-feeder` app can get price data from multiple providers and
 submit oracle votes to perform this duty.
@@ -138,18 +136,9 @@ sudo su -l kujioracle
     base = "USDT"
     threshold = "2"
 
-    [[currency_pairs]]
-    base = "ATOM"
-    providers = [
-        "binance",
-        "kraken",
-        "osmosis",
-    ]
-    quote = "USD"
-
     [account]
     address = "<wallet_address>"
-    chain_id = "harpoon-4"
+    chain_id = "kaiyo-1"
     validator = "<validator_address>"
     prefix = "kujira"
 
@@ -167,7 +156,7 @@ sudo su -l kujioracle
     enable_hostname_label = true
     enable_service_label = true
     enabled = true
-    global_labels = [["chain-id", "harpoon-4"]]
+    global_labels = [["chain-id", "kaiyo-1"]]
     service_name = "price-feeder"
     type = "prometheus"
 
@@ -180,7 +169,7 @@ sudo su -l kujioracle
 #### Validate the currency pairs
 It's important to only submit price votes for whitelisted denoms in order to avoid slashing.
 Check this link to see the currently configured denoms and update `[[currency_pairs]]` if needed:
-[harpoon-4 oracle parameters](https://lcd.harpoon.kujira.setten.io/oracle/params).
+[kaiyo-1 oracle parameters](https://lcd.kaiyo.kujira.setten.io/oracle/params).
 
 ## Run `price-feeder`
 1. Login as `kujioracle` (skip if you're already logged in).
