@@ -171,8 +171,8 @@ sudo su -l kujioracle
 
     [[provider_endpoints]]
     name = "binance"
-    rest = "https://api1.binance.com"
-    websocket = "stream.binance.com:9443"
+    rest = "https://api1.binance.us"
+    websocket = "stream.binance.us:9443"
     ```
 
 #### Validate the currency pairs
