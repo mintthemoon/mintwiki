@@ -136,6 +136,15 @@ sudo su -l kujioracle
     base = "USDT"
     threshold = "2"
 
+    [[currency_pairs]]
+    base = "ATOM"
+    providers = [
+      "binance",
+      "kraken",
+      "osmosis",
+    ]
+    quote = "USD"
+
     [account]
     address = "<wallet_address>"
     chain_id = "kaiyo-1"
