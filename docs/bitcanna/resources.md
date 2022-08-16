@@ -22,6 +22,7 @@
 - `d6aa4c9f3ccecb0cc52109a95962b4618d69dd3f@seed1.bitcanna.io:26656`
 - `23671067d0fd40aec523290585c7d8e91034a771@seed2.bitcanna.io:26656`
 - `ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:18656`
+- `dae4e4c346eed87200c40c983adaedb52881dafa@seed.bitcanna.mintserve.org:30814`
 
 ## Tools
 ### Explorers
