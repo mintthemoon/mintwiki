@@ -203,7 +203,7 @@ After=network.target
 [Service]
 Type=simple
 User=kujioracle
-ExecStart=/home/kujioracle/go/bin/price-feeder /home/kujioracle/config.toml
+ExecStart=/home/kujioracle/go/bin/price-feeder /home/kujioracle/config.toml --log-level debug
 Restart=on-abort
 LimitNOFILE=65535
 Environment="PRICE_FEEDER_PASS=<keyring_password>"
