@@ -165,7 +165,7 @@ sudo su -l kujioracle
     enable_hostname_label = true
     enable_service_label = true
     enabled = true
-    global_labels = [["chain-id", "kaiyo-1"]]
+    global_labels = [["chain_id", "kaiyo-1"]]
     service_name = "price-feeder"
     type = "prometheus"
 
