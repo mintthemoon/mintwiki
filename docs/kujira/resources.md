@@ -27,10 +27,10 @@
 - [https://api.kujira.pupmos.network:443](https://api.kujira.pupmos.network)
 
 ### Seed
-- `70c1d37dd9337d7162d67f49340805360e33b2c5@seed.kujira.mintserve.org:20656`
 - `ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:18656`
 - `2c0be5d48f1eb2ff7bd3e2a0b5b483835064b85a@95.216.7.241:41001`
 - `5a70fdcf1f51bb38920f655597ce5fc90b8b88b8@136.244.29.116:41656`
+- `63158c2af0d639d8105a8e6ca2c53dc243dd156f@seed.kujira.mintserve.org:31897`
 
 ## Tools
 ### Explorers
