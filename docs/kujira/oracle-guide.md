@@ -47,9 +47,9 @@ sudo su -l kujioracle
 ```bash
 cat <<EOF >> ~/.bashrc
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
+export GOPATH=\$HOME/go
 export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export PATH=\$PATH:/usr/local/go/bin:\$HOME/go/bin
 EOF
 source ~/.bashrc
 go version  # should output "go version go1.18.5 linux/amd64"
@@ -61,8 +61,7 @@ go version  # should output "go version go1.18.5 linux/amd64"
 ```bash
 sudo su -l kujioracle
 ```
-2. Build `kujirad` v0.5.0. We need the repo to build `price-feeder` and we'll
-  use the binary to create the keyring file.
+2. Build `kujirad` v0.5.0. We'll use the binary to create the keyring file.
 ```bash
 git clone https://github.com/Team-Kujira/core
 cd core
@@ -157,7 +156,7 @@ sudo su -l kujioracle
 
     [rpc]
     grpc_endpoint = "localhost:9090"
-    rpc_timeout = "100ms"
+    rpc_timeout = "500ms"
     tmrpc_endpoint = "http://localhost:26657"
 
     [telemetry]
@@ -175,10 +174,12 @@ sudo su -l kujioracle
     websocket = "stream.binance.us:9443"
     ```
 
-#### Validate the currency pairs
-It's important to only submit price votes for whitelisted denoms in order to avoid slashing.
-Check this link to see the currently configured denoms and update `[[currency_pairs]]` if needed:
-[kaiyo-1 oracle parameters](https://lcd.kaiyo.kujira.setten.io/oracle/params).
+
+#### Configure the currency pairs
+The `[[currency_pairs]]` provided in the config above is only an example, each validator
+should modify this to submit prices for the denoms whitelisted by the chain. Keep an eye
+out for governance proposals introducing new denoms and check the current ones here:
+[kaiyo-1 oracle parameters](https://lcd-kujira.mintthemoon.xyz/oracle/params).
 
 ## Run `price-feeder`
 1. Login as `kujioracle` (skip if you're already logged in).
