@@ -57,3 +57,4 @@
 - RPC: [https://test-rpc-kujira.mintthemoon.xyz:443](https://test-rpc-kujira.mintthemoon.xyz)
 - LCD: [https://test-lcd-kujira.mintthemoon.xyz:443](https://test-lcd-kujira.mintthemoon.xyz)
 - Explorer/Wallet: [testnets-cosmos.mintthemoon.xyz](https://testnets-cosmos.mintthemoon.xyz/kujira)
+- Seed: `c2a572758c7c894ad98fec213606c788b98ee079@test-seed.kujira.mintserve.org:32681`
