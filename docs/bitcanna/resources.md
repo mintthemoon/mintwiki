@@ -49,4 +49,4 @@
 - LCD: [https://test-lcd-bitcanna.mintthemoon.xyz:443](https://test-lcd-bitcanna.mintthemoon.xyz)
 - Explorer/Wallet: [testnets-cosmos.mintthemoon.xyz](https://testnets-cosmos.mintthemoon.xyz/bitcanna)
 - Seeds:
-    - `d71cd55184e2f1f2aea578c42d1ce2c386dbd892@test-seed.bitcanna.mintserve.org:30280`
+    - `d71cd55184e2f1f2aea578c42d1ce2c386dbd892@test-seed.bitcanna.mintserve.org:30820`
