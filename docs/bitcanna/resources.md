@@ -4,7 +4,7 @@
 | Name | Value |
 | --- | --- |
 | chain-id | bitcanna-1 |
-| bcnad version | v1.4.1 |
+| bcnad version | v1.4.2 |
 
 
 ## Infrastructure
@@ -43,7 +43,10 @@
 - [Polkachu Community Tools](https://polkachu.com/networks/bitcanna)
 
 ## Testnets
-### bitcanna-dev-4
+### bitcanna-dev-5
+- Version: v1.4.2
 - RPC: [https://test-rpc-bitcanna.mintthemoon.xyz:443](https://test-rpc-bitcanna.mintthemoon.xyz)
 - LCD: [https://test-lcd-bitcanna.mintthemoon.xyz:443](https://test-lcd-bitcanna.mintthemoon.xyz)
 - Explorer/Wallet: [testnets-cosmos.mintthemoon.xyz](https://testnets-cosmos.mintthemoon.xyz/bitcanna)
+- Seeds:
+    - `d71cd55184e2f1f2aea578c42d1ce2c386dbd892@test-seed.bitcanna.mintserve.org:30280`
