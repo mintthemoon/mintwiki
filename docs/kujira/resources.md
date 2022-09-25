@@ -16,6 +16,7 @@
 - [https://rpc-kujira.synergynodes.com:443](https://rpc-kujira.synergynodes.com)
 - [https://rpc-kujira.whispernode.com:443](https://rpc-kujira.whispernode.com)
 - [https://rpc.kujira.pupmos.network:443](https://rpc.kujira.pupmos.network)
+- [https://kujira-rpc.lavenderfive.com:443](https://kujira-rpc.lavenderfive.com)
 
 ### LCD/REST
 - [https://lcd-kujira.mintthemoon.xyz:443](https://lcd-kujira.mintthemoon.xyz)
@@ -25,6 +26,11 @@
 - [https://lcd-kujira.synergynodes.com:443](https://lcd-kujira.synergynodes.com)
 - [https://lcd-kujira.whispernode.com:443](https://lcd-kujira.whispernode.com)
 - [https://api.kujira.pupmos.network:443](https://api.kujira.pupmos.network)
+- [https://kujira-api.lavenderfive.com:443](https://kujira-api.lavenderfive.com)
+
+### gRPC
+- `kujira-grpc.polkachu.com:11890`
+- `https://kujira-grpc.lavenderfive.com:443`
 
 ### Seed
 - `ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:18656`

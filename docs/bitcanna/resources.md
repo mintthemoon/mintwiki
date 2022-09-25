@@ -12,11 +12,17 @@
 - [https://rpc-bitcanna.mintthemoon.xyz:443](https://rpc-bitcanna.mintthemoon.xyz)
 - [https://rpc.bitcanna.io:443](https://rpc.bitcanna.io)
 - [https://bitcanna-rpc.polkachu.com:443](https://bitcanna-rpc.polkachu.com)
+- [https://bitcanna-rpc.lavenderfive.com:443](https://bitcanna-rpc.lavenderfive.com)
 
 ### LCD/REST
 - [https://lcd-bitcanna.mintthemoon.xyz:443](https://lcd-bitcanna.mintthemoon.xyz)
 - [https://lcd.bitcanna.io:443](https://lcd.bitcanna.io)
 - [https://bitcanna-api.polkachu.com:443](https://bitcanna-api.polkachu.com)
+- [https://bitcanna-api.lavenderfive.com:443](https://bitcanna-api.lavenderfive.com)
+
+### gRPC
+- `bitcanna-grpc.polkachu.com:13090`
+- `https://bitcanna-grpc.lavenderfive.com:443`
 
 ### Seed
 - `d6aa4c9f3ccecb0cc52109a95962b4618d69dd3f@seed1.bitcanna.io:26656`
