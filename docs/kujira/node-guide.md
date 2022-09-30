@@ -51,10 +51,10 @@ sudo su -l kuji
 ```bash
 git clone https://github.com/Team-Kujira/core kujira-core
 cd kujira-core
-git checkout v0.5.0
+git checkout v0.6.0
 make install
 cd ..
-kujirad version  # should output "0.5.0"
+kujirad version  # should output "0.6.0"
 ```
 
 
