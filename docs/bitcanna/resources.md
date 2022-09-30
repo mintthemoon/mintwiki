@@ -50,7 +50,7 @@
 
 ## Testnets
 ### bitcanna-dev-5
-- Version: v1.4.2
+- Version: v1.5.1
 - RPC: [https://test-rpc-bitcanna.mintthemoon.xyz:443](https://test-rpc-bitcanna.mintthemoon.xyz)
 - LCD: [https://test-lcd-bitcanna.mintthemoon.xyz:443](https://test-lcd-bitcanna.mintthemoon.xyz)
 - Explorer/Wallet: [testnets-cosmos.mintthemoon.xyz](https://testnets-cosmos.mintthemoon.xyz/bitcanna)
