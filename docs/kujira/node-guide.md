@@ -84,7 +84,7 @@ sed -i "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.00119ukuji,0.00150ib
 ```
 6. (Optional) Configure some seeds. This will help your node find peers.
 ```bash
-sed -i 's/^seeds =.*/seeds = "63158c2af0d639d8105a8e6ca2c53dc243dd156f@seed.kujira.mintserve.org:31897,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:18656"/' $HOME/.kujira/config/config.toml
+sed -i 's/^seeds =.*/seeds = "ea9f295fe14768c35ff05870098fbd7bf860836d@seed.kujira.mintserve.org:31897,ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:11856"/' $HOME/.kujira/config/config.toml
 ```
 
 ## Start the node

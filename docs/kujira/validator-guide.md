@@ -30,7 +30,10 @@ kujirad tx staking create-validator \
     --commission-max-change-rate=0.02 \
     --commission-max-rate=0.15 \
     --commission-rate=0.05 \
-    --min-self-delegation=1
+    --min-self-delegation=1 \
+    --gas=auto \
+    --gas-prices=0.00125ukuji \
+    --gas-adjustment=1.5
 ```
 
 ## Backup your keys!
