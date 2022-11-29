@@ -51,9 +51,9 @@ sudo su -l bcna
 ```bash
 git clone https://github.com/BitCannaGlobal/bcna.git
 cd bcna
-git checkout v1.4.2
+git checkout v1.5.3
 make install
-bcnad version  # should output "1.4.2"
+bcnad version  # should output "1.5.3"
 ```
 
 
