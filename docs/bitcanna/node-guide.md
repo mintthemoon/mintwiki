@@ -33,9 +33,9 @@ sudo su -l bcna
 ```bash
 cat <<EOF >> ~/.bashrc
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
+export GOPATH=\$HOME/go
 export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export PATH=\$PATH:/usr/local/go/bin:\$HOME/go/bin
 EOF
 source ~/.bashrc
 go version  # should output "go version go1.18.5 linux/amd64"

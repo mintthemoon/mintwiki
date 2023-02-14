@@ -208,6 +208,7 @@ ExecStart=/home/kujioracle/go/bin/price-feeder /home/kujioracle/config.toml --lo
 Restart=on-abort
 LimitNOFILE=65535
 Environment="PRICE_FEEDER_PASS=<keyring_password>"
+WorkingDirectory=/home/kujioracle
 
 [Install]
 WantedBy=multi-user.target
